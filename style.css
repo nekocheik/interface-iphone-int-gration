@@ -1,0 +1,108 @@
+body {
+  background-image: url("/background-iphone.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Montserrat;
+  color: white;
+  font-weight: 500;
+  background-attachment: fixed;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+header {
+  padding: 16px 16px;
+}
+
+.network-icon {
+  width: 90px;
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+main {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 70vh;
+}
+
+.row-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .row-wrapper p {
+  padding-top: 10px;
+}
+
+main img {
+  width: 70px;
+  border-radius: 14px;
+}
+
+footer img {
+  width: 70px;
+  border-radius: 14px;
+}
+
+footer .row-wrapper {
+  width: 375px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.318); 
+  padding-top: 10px;
+  border-radius: 20px;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+}
+
+main div {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.selector-position-page {
+  width: 120px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.741);
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.selector-position-page .point {
+  background-color: rgba(0, 0, 0, 0.272);
+  width: 10px;
+  height: 10px;
+  display: block;
+  border-radius: 100%;
+}
+
+.selector-position-page .point.selected {
+  background-color: white;
+}
+
+
+@media (min-width: 768px) {
+  main img {
+    width: 100px;
+  }
+  main {
+    margin: auto;
+    width: 767px;
+  }
+  .mobile-hidden {
+    display: block;
+  }
+  footer .row-wrapper {
+    width: 600px;
+  }
+}
